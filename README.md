@@ -3,5 +3,5 @@
 </h1>
 
 <p align="center">
-  I used (Gatsby)[https://www.gatsbyjs.org] to build this project. Check it out.
+  I used <a href="https://www.gatsbyjs.org">Gatsby</a> to build this project. Check it out.
 </p>
