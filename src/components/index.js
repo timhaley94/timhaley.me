@@ -1,0 +1,13 @@
+export { default as About } from './About';
+export { default as Button } from './Button';
+export { default as Emoji } from './Emoji';
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
+export { default as Image } from './Image';
+export { default as Layout } from './Layout';
+export { default as Project } from './Project';
+export { default as Projects } from './Projects';
+export { default as SecondaryButton } from './SecondaryButton';
+export { default as Section } from './Section';
+export { default as SEO } from './SEO';
+export { default as Skills } from './Skills';

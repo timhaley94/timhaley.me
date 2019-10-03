@@ -1,0 +1,9 @@
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  margin: 0 0.1rem;
+}

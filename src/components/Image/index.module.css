@@ -1,0 +1,6 @@
+.container {
+  border-radius: 100%;
+  border: 15px solid #37d48d;
+  width: 300px;
+  margin: 0 auto;
+}

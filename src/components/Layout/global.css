@@ -1,0 +1,28 @@
+a, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #3d3d3d;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  height: 0;
+  border-top: 1px solid #a8a8a8;
+  box-shadow: none;
+}
