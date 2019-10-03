@@ -10,7 +10,9 @@ const projects = [
     },
     title: 'Election Simulator',
     description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sit amet nibh eu mattis. Phasellus lacinia magna at ex faucibus, ut semper nisi condimentum. Cras convallis accumsan faucibus. Fusce egestas viverra ultricies. Curabitur eget augue pellentesque, gravida orci tempor, sollicitudin ante.
+      A data visualization and simulation project that is designed to demonstrate
+      a finding in political science called Duverger's Law. This project was a chance
+      to tie together two things I love: data and social science.
     `,
     sourceUrl: 'https://github.com/timhaley94/election_simulator/',
     url: 'https://election-simulator.netlify.com/',
@@ -27,7 +29,9 @@ const projects = [
     },
     title: 'Five Card Draw',
     description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum sit amet nibh eu mattis. Phasellus lacinia magna at ex faucibus, ut semper nisi condimentum. Cras convallis accumsan faucibus. Fusce egestas viverra ultricies. Curabitur eget augue pellentesque, gravida orci tempor, sollicitudin ante.
+      A online, multiplayer implementation of five card draw built with Elixir
+      and the Phoenix framework. Backend is wrapping up development and a web
+      client will be built afterwards.
     `,
     sourceUrl: 'https://github.com/timhaley94/five_card_draw',
     tags: [
