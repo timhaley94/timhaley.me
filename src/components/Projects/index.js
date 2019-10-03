@@ -44,7 +44,11 @@ const projects = [
 
 function Projects() {
   const [tags, setTags] = useState([]);
-  const onAddTag = tag => setTags([tag, ...tags]);
+  const onAddTag = tag => setTags(
+    !tags.includes(tag)
+      ? [tag, ...tags]
+      : tags
+  );
   const onRemoveTag = tag => setTags(tags.filter(t => t !== tag));
 
   const mappedProjects = (
