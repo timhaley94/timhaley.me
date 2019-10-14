@@ -24,12 +24,50 @@ const projects = [
   },
   {
     emoji: {
+      value: '🤖',
+      alt: 'robot'
+    },
+    title: 'Markov Maps',
+    description: `
+      A data visualization and simulation project that is designed to demonstrate
+      a finding in political science called Duverger's Law. This project was a chance
+      to tie together two things I love: data and social science.
+    `,
+    sourceUrl: 'https://github.com/timhaley94/markov_maps',
+    url: 'https://markov-maps.netlify.com/',
+    tags: [
+      'Frontend',
+      'Data',
+      'Machine Learning'
+    ]
+  },
+  {
+    emoji: {
+      value: '🐉',
+      alt: 'dragon'
+    },
+    title: 'Dungeon Generator',
+    description: `
+      A simple browser video game that allows you explore a randomly generated
+      "dungeon" searching for the exit. The dungeons are generated using a
+      modified random walk algorithm.
+    `,
+    sourceUrl: 'https://github.com/timhaley94/election_simulator/',
+    url: 'https://github.com/timhaley94/dungeons',
+    tags: [
+      'Frontend',
+      'Gaming',
+      'Content Generation'
+    ]
+  },
+  {
+    emoji: {
       value: '🃏',
       alt: 'joker'
     },
     title: 'Five Card Draw',
     description: `
-      A online, multiplayer implementation of five card draw built with Elixir
+      An online, multiplayer implementation of five card draw built with Elixir
       and the Phoenix framework. Backend is wrapping up development and a web
       client will be built afterwards.
     `,
@@ -39,7 +77,24 @@ const projects = [
       'Multiplayer',
       'Gaming'
     ]
-  }
+  },
+  {
+    emoji: {
+      value: '👨🏻‍💻',
+      alt: 'man-at-computer'
+    },
+    title: 'Portofolio Site',
+    description: `
+      The site you are viewing! I used the
+      wonderful React based static site generator, Gatsby. The site was
+      created without using a premade theme, so it was mostly a design challenge.
+    `,
+    sourceUrl: 'https://github.com/timhaley94/timhaley.me',
+    tags: [
+      'Frontend',
+      'Design'
+    ]
+  },
 ];
 
 function Projects() {
