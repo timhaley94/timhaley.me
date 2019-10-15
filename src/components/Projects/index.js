@@ -80,8 +80,8 @@ const projects = [
   },
   {
     emoji: {
-      value: '👨🏻‍💻',
-      alt: 'man-at-computer'
+      value: '🔮‍',
+      alt: 'crystal-ball'
     },
     title: 'Portofolio Site',
     description: `
