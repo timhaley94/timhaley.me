@@ -29,9 +29,9 @@ const projects = [
     },
     title: 'Markov Maps',
     description: `
-      A data visualization and simulation project that is designed to demonstrate
-      a finding in political science called Duverger's Law. This project was a chance
-      to tie together two things I love: data and social science.
+      A data visualization tool that allows you to build a map, using drag and drop,
+      that represents a markov decision process. You can then have a Q-Learning agent
+      explore the map until it converges on a solution.
     `,
     sourceUrl: 'https://github.com/timhaley94/markov_maps',
     url: 'https://markov-maps.netlify.com/',
@@ -52,8 +52,8 @@ const projects = [
       "dungeon" searching for the exit. The dungeons are generated using a
       modified random walk algorithm.
     `,
-    sourceUrl: 'https://github.com/timhaley94/election_simulator/',
-    url: 'https://github.com/timhaley94/dungeons',
+    sourceUrl: 'https://github.com/timhaley94/dungeons',
+    url: 'https://dungeon-gen.netlify.com/',
     tags: [
       'Frontend',
       'Gaming',
@@ -74,8 +74,8 @@ const projects = [
     sourceUrl: 'https://github.com/timhaley94/five_card_draw',
     tags: [
       'Full Stack',
-      'Multiplayer',
-      'Gaming'
+      'Gaming',
+      'Multiplayer'
     ]
   },
   {

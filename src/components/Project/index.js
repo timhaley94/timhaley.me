@@ -14,7 +14,7 @@ function Project({
 }) {
   return (
     <div className={ styles.container }>
-      <a href={ sourceUrl } className={ styles.headerLink }>
+      <a href={ url || sourceUrl } className={ styles.headerLink }>
         <div className={ styles.header }>
           <Emoji { ...emoji } />
           <h4 className={ styles.titleText }>
