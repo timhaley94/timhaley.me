@@ -132,7 +132,7 @@ function Projects() {
   );
 
   return (
-    <Section title="Projects" anchor="projects" headerChildren={ headerChildren }>
+    <Section title="Projects" headerChildren={ headerChildren }>
       { mappedProjects }
     </Section>
   );

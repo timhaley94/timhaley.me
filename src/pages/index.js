@@ -1,19 +1,8 @@
 import React from 'react';
-import {
-  About,
-  Layout,
-  SEO,
-  Skills,
-  Projects
-} from '../components';
+import { About, Layout } from '../components';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO />
+export default () => (
+  <Layout noFooter>
     <About />
-    { /* <Skills /> */ }
-    <Projects />
   </Layout>
 )
-
-export default IndexPage

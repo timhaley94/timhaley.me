@@ -5,17 +5,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
-  margin: 0 15px;
-}
-
-.copyright {
-  margin: 1rem 0 0 0;
-}

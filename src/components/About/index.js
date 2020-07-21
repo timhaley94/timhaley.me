@@ -11,7 +11,7 @@ function About() {
         <p className={ styles.description }>
           I'm a software engineer from Chattanooga, TN and who likes
           to write code, play Dungeons and Dragons, and watch NBA
-          basketball. This site is a showcase of some of my work.
+          basketball. This is my corner of the interwebs.
         </p>
       </a>
     </div>

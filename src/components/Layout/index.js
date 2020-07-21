@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Header, Footer } from '..';
+import { Header, Footer, SEO } from '..';
 import styles from './index.module.css';
 import './normalize.css';
 import './global.css';
 
-const Layout = ({ children }) => {
+const Layout = ({ noFooter, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,15 +23,21 @@ const Layout = ({ children }) => {
       <div className={ styles.container }>
         <div className={ styles.content }>
           <main>{ children }</main>
-          <Footer />
+          { !noFooter ? <Footer /> : null }
         </div>
       </div>
+      <SEO />
     </>
   )
 }
 
 Layout.propTypes = {
+  noFooter: PropTypes.bool,
   children: PropTypes.node.isRequired,
+};
+
+Layout.defaultProps = {
+  noFooter: false
 };
 
 export default Layout;

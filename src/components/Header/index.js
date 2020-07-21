@@ -15,9 +15,8 @@ function Header() {
           </span>
         </Link>
         <nav>
-          <Link className={ styles.navLink } to="/#me">Me</Link>
-          { /* <Link className={ styles.navLink } to="/#skills">Skills</Link> */ }
-          <Link className={ styles.navLink } to="/#projects">Projects</Link>
+          <Link className={ styles.navLink } to="/now">Now</Link>
+          <Link className={ styles.navLink } to="/code">Code</Link>
         </nav>
       </div>
     </header>
