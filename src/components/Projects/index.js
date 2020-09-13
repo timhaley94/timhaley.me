@@ -5,6 +5,40 @@ import styles from './index.module.css';
 const projects = [
   {
     emoji: {
+      value: '🃏',
+      alt: 'joker'
+    },
+    title: 'Holdem Hounds',
+    description: `
+      An online, multiplayer implementation of Texas Hold'em with a dog theme.
+      Written in full stack Javascript and deployed on AWS.
+    `,
+    sourceUrl: 'https://github.com/timhaley94/holdem',
+    url: 'https://holdemhounds.com',
+    tags: [
+      'Full Stack',
+      'Gaming',
+      'Multiplayer'
+    ]
+  },
+  {
+    emoji: {
+      value: '👀',
+      alt: 'use-on-visible'
+    },
+    title: 'use-on-visible',
+    description: `
+      An open source React hook, available on npm, that fires a callback
+      when an html element becomes visible. (Used by the 🔮 in this site's footer)
+    `,
+    sourceUrl: 'https://github.com/timhaley94/use-on-visible',
+    tags: [
+      'Frontend',
+      'Open Source'
+    ]
+  },
+  {
+    emoji: {
       value: '🗳️',
       alt: 'ballot-box'
     },
@@ -58,24 +92,6 @@ const projects = [
       'Frontend',
       'Gaming',
       'Content Generation'
-    ]
-  },
-  {
-    emoji: {
-      value: '🃏',
-      alt: 'joker'
-    },
-    title: 'Five Card Draw',
-    description: `
-      An online, multiplayer implementation of five card draw built with Elixir
-      and the Phoenix framework. Backend is wrapping up development and a web
-      client will be built afterwards.
-    `,
-    sourceUrl: 'https://github.com/timhaley94/five_card_draw',
-    tags: [
-      'Full Stack',
-      'Gaming',
-      'Multiplayer'
     ]
   },
   {

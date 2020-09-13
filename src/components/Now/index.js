@@ -10,7 +10,7 @@ function About() {
         <a
           className={ styles.link }
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           href="https://nownownow.com/about"
         >
           now page
@@ -20,8 +20,8 @@ function About() {
       <div className={ styles.container }>
         <p className={ styles.p }>
           Laura and I have made our lives in Chattanooga a little more permenant
-          by buying a house. We're currently in the process of building a fence
-          so we can buy a dog. <Emoji value="🐶" alt="dog" />
+          by buying a house. We also adopted a golden retriever mix named Scout.
+          { ' ' }<Emoji value="🐶" alt="dog" />
         </p>
         <p className={ styles.p }>
           I'm working as a Backend Engineer at <a href="https://trello.com/">Trello</a>{ ' ' }
