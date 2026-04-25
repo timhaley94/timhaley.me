@@ -1,0 +1,26 @@
+---
+import Page from '../layouts/Page.astro';
+---
+<Page title="404 | Tim Haley" noFooter>
+  <div class="not-found">
+    <p class="emoji">🔮</p>
+    <h1>Page not found</h1>
+    <p><a href="/">Go home</a></p>
+  </div>
+</Page>
+
+<style>
+  .not-found {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .emoji {
+    font-size: 3rem;
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+import Base from './Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  noFooter?: boolean;
+}
+
+const { title, description, noFooter = false } = Astro.props;
+---
+<Base title={title} description={description}>
+  <Header />
+  <div class="page-container">
+    <div class="page-content">
+      <main>
+        <slot />
+      </main>
+      {!noFooter && <Footer />}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .page-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+  }
+
+  .page-content {
+    margin-top: 1.5rem;
+  }
+</style>

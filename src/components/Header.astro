@@ -1,0 +1,213 @@
+---
+---
+<header class="header">
+  <div class="header-content">
+    <a href="/" class="profile-link">
+      <img class="profile-img" src="/profile.jpg" alt="Tim Haley" width="36" height="36" />
+    </a>
+    <div class="date-picker" id="date-picker">
+      <button class="date-picker-btn" id="date-picker-btn" aria-label="Open calendar">
+        <span class="date-label" id="current-date-label"></span>
+        <span class="picker-caret">▾</span>
+      </button>
+      <div class="calendar" id="calendar">
+        <div class="cal-nav">
+          <button class="cal-nav-btn" id="cal-prev">‹</button>
+          <span class="cal-month-label" id="cal-month-label"></span>
+          <button class="cal-nav-btn" id="cal-next">›</button>
+        </div>
+        <div class="cal-days-header">
+          <span>Su</span><span>Mo</span><span>Tu</span>
+          <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid var(--accent);
+  }
+
+  /* --- Date picker trigger --- */
+
+  .date-picker {
+    position: relative;
+  }
+
+  .date-picker-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0;
+    font-family: inherit;
+  }
+
+  .date-label {
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: color 0.15s;
+  }
+
+  .picker-caret {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    display: inline-block;
+    transition: transform 0.15s, color 0.15s;
+    line-height: 1;
+  }
+
+  .date-picker.open .picker-caret {
+    transform: rotate(180deg);
+  }
+
+  .date-picker-btn:hover .date-label {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .date-picker-btn:hover .picker-caret {
+    color: var(--accent);
+  }
+
+  /* --- Calendar dropdown --- */
+
+  .calendar {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.75rem);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 244px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    z-index: 200;
+  }
+
+  .calendar.open {
+    display: block;
+  }
+
+  .cal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+
+  .cal-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 1rem;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-family: inherit;
+    transition: color 0.15s;
+    line-height: 1;
+  }
+
+  .cal-nav-btn:hover {
+    color: var(--accent);
+  }
+
+  .cal-month-label {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .cal-days-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 0.35rem;
+  }
+
+  .cal-days-header span {
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+  }
+
+  /* Styles for JS-created day buttons */
+  :global(.cal-day) {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    color: var(--border);
+    padding: 0;
+    cursor: default;
+  }
+
+  :global(.cal-day.has-posts) {
+    color: var(--text);
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  :global(.cal-day.has-posts:hover) {
+    background: var(--tag-bg);
+    color: var(--accent);
+  }
+
+  :global(.cal-day.selected) {
+    background: var(--accent) !important;
+    color: var(--bg) !important;
+  }
+</style>

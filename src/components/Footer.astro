@@ -1,0 +1,43 @@
+---
+---
+<hr />
+<footer class="footer">
+  <span class="crystal-ball" id="footer-crystal" role="img" aria-label="crystal ball">🔮</span>
+</footer>
+
+<script>
+  const el = document.getElementById('footer-crystal');
+  if (el) {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        el.classList.remove('rotating');
+        void (el as HTMLElement).offsetWidth; // reflow to restart animation
+        el.classList.add('rotating');
+      }
+    });
+    observer.observe(el);
+  }
+</script>
+
+<style>
+  .footer {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crystal-ball {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  @keyframes rotate-center {
+    0%   { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .rotating {
+    animation: rotate-center 0.7s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+  }
+</style>

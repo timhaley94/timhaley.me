@@ -1,0 +1,78 @@
+:root {
+  --font-ui:      'Raleway', sans-serif;
+  --font-prose:   'Lora', serif;
+
+  --bg-page:      #ece8e0;
+  --bg:           #f5f1ea;
+  --surface:      #ece8e0;
+  --text:         #2a2825;
+  --text-muted:   #8a8480;
+  --text-dim:     #b8b2a8;
+  --accent:       #6a9e8a;
+  --accent-hover: #528070;
+  --border:       #ddd8cf;
+  --tag-bg:       #eef4f1;
+  --tag-text:     #4d8a78;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text);
+  font-family: var(--font-prose);
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+p {
+  font-family: var(--font-prose);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-family: var(--font-prose);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: var(--font-prose);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  height: 0;
+  border-top: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.ui-link {
+  transition: color 0.15s;
+  cursor: pointer;
+}
+
+.ui-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
